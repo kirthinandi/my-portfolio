@@ -7,8 +7,20 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 
+
 function App() {
 
+  function handleClick()  {
+    window.open("https://www.linkedin.com/in/kirthi-nandi/", "_blank");
+  }
+
+  function handleGithub() {
+    window.open("https://github.com/kirthinandi", "_blank");
+  }
+
+  function handleBlog() {
+    window.open("https://dev.to/kirthinandi", "_blank");
+  }
 
   return (
       <>
@@ -21,6 +33,11 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
+
+        <button onClick={handleClick}>LinkedIn</button>
+        <button onClick={handleGithub}>Github</button>
+        <button onClick={handleBlog}>Blog</button>
+        <p>kirthi.nandi@gmail.com</p>
       </>
   );
 }
