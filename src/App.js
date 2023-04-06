@@ -15,7 +15,7 @@ function App() {
   }
 
   function handleGithub() {
-    window.open("https://github.com/kirthinandi", "_blank");
+    window.open("https://github.com/kirthinandi", "_upblank");
   }
 
   function handleBlog() {

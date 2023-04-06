@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: url("https://images.unsplash.com/photo-1529697216570-f48ef8f6b2dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 5em;
+  /* display: flex; 
+  justify-content: center; */
+  text-align: center;
+}
+
+.myName {
+  overflow: hidden;
+  border-right: .15em solid deeppink;
+  white-space: nowrap;
+  font-size: 4rem;
+  width: 0;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 2.5s steps(20, end) forwards, blink-caret .75s step-end infinite;
+  font-family: 'Cinzel Decorative', cursive;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+.container {
+   display: inline-block; 
+   
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:deeppink}
+}
