@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import MyResume from './Kirthi Nandi Resume.pdf';
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
     window.open("https://dev.to/kirthinandi", "_blank");
   }
 
+  function openResume() {
+    window.open(MyResume);
+  }
+
   return (
       <>
         <Router>
@@ -34,6 +39,7 @@ function App() {
             </Routes>
         </Router>
 
+        <button onClick={openResume}>Resume</button>
         <button onClick={handleClick}>LinkedIn</button>
         <button onClick={handleGithub}>Github</button>
         <button onClick={handleBlog}>Blog</button>
