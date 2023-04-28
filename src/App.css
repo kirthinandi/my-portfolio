@@ -38,7 +38,7 @@
 }
 
 body {
-  background: url("https://images.unsplash.com/photo-1529697216570-f48ef8f6b2dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80") no-repeat center center fixed; 
+  background: url("https://images.unsplash.com/photo-1500417148159-68083bd7333a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2938&q=80") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -80,3 +80,77 @@ body {
   from, to { border-color: transparent }
   50% { border-color:deeppink}
 }
+
+.landingPage {
+  border: 4px solid white;
+  padding: 10px;
+  width: 42em;
+  height: 30em;
+  float: right;
+  margin-right: 80px;
+  margin-top: 80px;
+}
+
+.hello {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  margin-top: 70px;
+  font-size: 110px;
+  font-weight: bolder;
+  line-height: 60%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Arizonia&family=Bad+Script&family=Marck+Script&family=Poiret+One&display=swap'); /* Hello Font */
+
+.name {
+  font-size: 70px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  line-height: 50%;
+}
+
+.jobTitle {
+  font-size: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  overflow: hidden; /* Hide the text until it is revealed */
+  border-right: 0.15em solid #000; /* Add a blinking cursor effect */
+  white-space: nowrap; /* Prevent line breaks */
+  letter-spacing: 0.15em; /* Add spacing between letters */
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Define the animation */
+@keyframes typing {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 100%; /* Gradually reveal the text */
+  }
+}
+
+/* Define the blinking cursor animation */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.landingButton {
+  border-radius: 5px;
+  font-size: 40px;
+  background-color:slateblue;
+  font-family: 'Italiana', serif;
+  border-color: white;
+  border-width: 2.5px;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+  width: 4em;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Copse&family=Italiana&display=swap');
