@@ -22,7 +22,7 @@ export default function Home() {
       }
 
     return (
-        <div>
+        <div className="home">
             <nav>
                 <Link to="/home">Home </Link>
                 <Link to="/about">About </Link>
