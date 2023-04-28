@@ -153,7 +153,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Copse&family=Italiana&display=swap');
 
 .home {
-  background: url("https://images.unsplash.com/photo-1474770337042-bd7e2ccb4f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80") no-repeat center center fixed; 
+  background: url("https://images.unsplash.com/photo-1615715325952-0e8e849c72b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
