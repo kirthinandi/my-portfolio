@@ -162,4 +162,63 @@ body {
   flex-direction: column;
 }
 
+.navBar {
+  display: flex;
+  align-items: center;
+  background-color:rebeccapurple; 
+  color: #fff;
+}
 
+.links {
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 10px;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  font-size: 30px;
+}
+
+.homeLink {
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 10px;
+  margin-left: 28.5em;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  font-size: 30px;
+}
+
+.links:hover {
+  color:hotpink;
+}
+
+.homeLink:hover {
+  color:hotpink;
+}
+
+.backToLP {
+  text-align: left;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+
+.logo h1 {
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+}
