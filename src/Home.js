@@ -52,11 +52,13 @@ export default function Home() {
                   <Link to="/contact" className="links">Contact </Link>
                 </div>
             </nav>
-            <button onClick={openResume}>Resume</button>
-            <button onClick={handleClick}>LinkedIn</button>
-            <button onClick={handleGithub}>Github</button>
-            <button onClick={handleBlog}>Blog</button>
-            <p>kirthi.nandi@gmail.com</p>
+            <div className='footer'>
+              <button onClick={openResume} className="footerButtons">Resume</button>
+              <button onClick={handleClick} className="footerButtons">LinkedIn</button>
+              <button onClick={handleGithub} className="footerButtons">Github</button>
+              <button onClick={handleBlog} className="footerButtons">Blog</button>
+              <p className="footerContact">Contact me at kirthi.nandi@gmail.com</p>
+            </div>
          </div>
     )
 }
