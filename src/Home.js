@@ -33,6 +33,10 @@ export default function Home() {
         navigate('/');
       }
 
+      function handleContact() {
+        navigate('/contact')
+      }
+
     return (
         <div className="home">
             <nav className="navbar">
@@ -57,7 +61,7 @@ export default function Home() {
               <button onClick={handleClick} className="footerButtons">LinkedIn</button>
               <button onClick={handleGithub} className="footerButtons">Github</button>
               <button onClick={handleBlog} className="footerButtons">Blog</button>
-              <p className="footerContact">Contact me at kirthi.nandi@gmail.com</p>
+              <p className="footerContact" onClick={handleContact}>Contact me at kirthi.nandi@gmail.com</p>
             </div>
          </div>
     )
