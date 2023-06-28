@@ -269,3 +269,27 @@ body {
 .footerButtons:hover {
   color: hotpink;
 }
+
+.about {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color:floralwhite;
+}
+
+.projects {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color:floralwhite;
+}

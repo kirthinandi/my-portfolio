@@ -1,14 +1,49 @@
 import React,{ useState } from 'react';
 import { send } from 'emailjs-com';
+import {Link} from "react-router-dom";
+import MyResume from './Kirthi Nandi Resume.pdf';
+import flowerImg from './flower.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function Contact() {
-
     const [toSend, setToSend] = useState({
         from_name: '',
         to_name: '',
         message: '',
         reply_to: '',
     });
+    const [showMenu, setShowMenu] = useState(false);
+    const navigate = useNavigate();
+
+
+    const handleMenuClick = () => {
+        setShowMenu(!showMenu);  /*everytime the navbar lines are clicked, it will set the show menu to the opposite of the original state of show menu (will set to true) */
+      }
+  
+      function handleClick()  {
+          window.open("https://www.linkedin.com/in/kirthi-nandi/", "_blank");
+        }
+      
+        function handleGithub() {
+          window.open("https://github.com/kirthinandi", "_upblank");
+        }
+      
+        function handleBlog() {
+          window.open("https://dev.to/kirthinandi", "_blank");
+        }
+      
+        function openResume() {
+          window.open(MyResume);
+        }
+  
+        function handleLogoClick() {
+          navigate('/');
+        }
+  
+        function handleContact() {
+          navigate('/contact')
+        }
+  
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -32,7 +67,25 @@ export default function Contact() {
     };
 
     return (
-        <div>
+
+        <div className="about">
+            <nav className="navbar">
+                <div className="navbar__menu-icon" onClick={handleMenuClick}>
+                  <div className="navbar__menu-icon__line"></div>
+                  <div className="navbar__menu-icon__line"></div>
+                  <div className="navbar__menu-icon__line"></div>
+                </div>    
+                <div className="logo">
+                  <img src={flowerImg} alt="logo" onClick={handleLogoClick}/>
+                  <h1 onClick={handleLogoClick}>Kirthi Nandi</h1>
+                </div>
+                <div className={`navbar__menu ${showMenu ? 'navbar__menu--show' : ''}`}>
+                  <Link to="/home" className="links">Home </Link>
+                  <Link to="/about" className="links">About </Link>
+                  <Link to="/projects" className="links">Projects </Link>
+                  <Link to="/contact" className="links">Contact </Link>
+                </div>
+            </nav>
             <h3>Keep in Touch!</h3>
             <form onSubmit={handleSubmit}>
                 <label>Your Name:</label>
@@ -69,6 +122,13 @@ export default function Contact() {
                 />
                 <button type='submit'>Submit</button>
             </form>
-        </div>
+            <div className='footer'>
+              <button onClick={openResume} className="footerButtons">Resume</button>
+              <button onClick={handleClick} className="footerButtons">LinkedIn</button>
+              <button onClick={handleGithub} className="footerButtons">Github</button>
+              <button onClick={handleBlog} className="footerButtons">Blog</button>
+              <p className="footerContact" onClick={handleContact}>Contact me at kirthi.nandi@gmail.com</p>
+            </div>
+         </div>
     )
 }
