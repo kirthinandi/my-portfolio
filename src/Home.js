@@ -56,6 +56,11 @@ export default function Home() {
                   <Link to="/contact" className="links">Contact </Link>
                 </div>
             </nav>
+            <div>
+              <h1>Welcome!</h1>
+              <h2>I'm Kirthi Nandi</h2>
+              <p>Here you can learn more about me, what I have worked on, and what I have contributed to. It is a place from which you can contact me.</p> 
+            </div>
             <div className='footer'>
               <button onClick={openResume} className="footerButtons">Resume</button>
               <button onClick={handleClick} className="footerButtons">LinkedIn</button>
