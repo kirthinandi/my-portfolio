@@ -334,3 +334,26 @@ body {
   width: 250px;
 }
 
+.aboutTitle {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold !important;
+  font-size: 38px;
+}
+
+.aboutContent {
+ text-align: center;
+ margin-left: 50em;
+ margin-right: 30px;
+ margin-top: -20em;
+}
+
+.techList {
+  list-style: none;
+}
+
+.myPic {
+  width: 280px;
+  height: 350px;
+  margin-right: 76em;
+  margin-bottom: 
+}

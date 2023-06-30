@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import MyResume from './Kirthi Nandi Resume.pdf';
 import flowerImg from './flower.png';
 import { useNavigate } from 'react-router-dom';
+import myPic from './mypic.png';
 
 export default function About() {
     const [showMenu, setShowMenu] = useState(false);
@@ -62,10 +63,13 @@ export default function About() {
                   <Link to="/contact" className="links">Contact </Link>
                 </div>
             </nav>
-            <h1>About Me</h1>
-            <p>Hello! My name is Kirthi Nandi and I am based in the Bay Area in California. I am someone who enjoys spending time discovering new music, going on long walks with my dog, Simba, and picking up new hobbies such as reading or crocheting. My interest in web development started early on as my curious mind always imagined and questioned the inner workings of a simple computer able to compute complex tasks. My time at Flatiron School solidified my interest as I was given the opportunity to learn hands-on what it was like using different languages to build functioning and innovative web applications.</p>
-            <h2>Technologies I've Been Working With:</h2>
-            <ul>{listItems}</ul>
+            <h1 className="aboutTitle">About Me</h1>
+            <img className="myPic" src={myPic} alt="Kirthi's Picture"/>
+            <div className="aboutContent">
+              <p>Hello! My name is Kirthi Nandi and I am based in the Bay Area in California. I am someone who enjoys spending time discovering new music, going on long walks with my dog, Simba, and picking up new hobbies such as reading or crocheting. My interest in web development started early on as my curious mind always imagined and questioned the inner workings of a simple computer able to compute complex tasks. My time at Flatiron School solidified my interest as I was given the opportunity to learn hands-on what it was like using different languages to build functioning and innovative web applications.</p>
+              <h2>Technologies I've Been Working With:</h2>
+              <ul className="techList">{listItems}</ul>
+            </div>
             <div className='footer'>
               <button onClick={openResume} className="footerButtons">Resume</button>
               <button onClick={handleClick} className="footerButtons">LinkedIn</button>
