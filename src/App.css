@@ -341,10 +341,12 @@ body {
 }
 
 .aboutContent {
- text-align: center;
- margin-left: 50em;
- margin-right: 30px;
- margin-top: -20em;
+ width: 45em;
+ margin-left: 38em;
+ margin-top: -22em;
+ font-size: 18px;
+ border: 2px solid black;
+ padding: 10px;
 }
 
 .techList {
@@ -352,8 +354,17 @@ body {
 }
 
 .myPic {
-  width: 280px;
-  height: 350px;
-  margin-right: 76em;
-  margin-bottom: 
+  width: 330px;
+  height: 400px;
+  margin-right: 60em;
+} 
+
+.tech {
+ width: 20em;
+ height: 11.5em;
+ margin-left: 60em;
+ margin-top: 0.5em;
+ font-size: 16px;
+ border: 2px solid black;
+ padding: 10px;
 }
